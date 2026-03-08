@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#d9d9ff"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Moon shape -->
+  <circle cx="55" cy="45" r="35" fill="url(#moonGlow)" />
+
+  <!-- Crescent shadow -->
+  <circle cx="70" cy="40" r="35" fill="#0b1026" />
+
+  <!-- Small stars -->
+  <circle cx="20" cy="20" r="2" fill="#ffffff"/>
+  <circle cx="80" cy="25" r="1.5" fill="#ffffff"/>
+  <circle cx="25" cy="75" r="1.5" fill="#ffffff"/>
+</svg>
