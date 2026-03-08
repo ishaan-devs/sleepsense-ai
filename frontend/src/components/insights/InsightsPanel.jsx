@@ -36,7 +36,7 @@ const InsightsPanel = () => {
   const fetchAllData = async () => {
     try {
       // Fetch sleep data
-      const sleepResponse = await fetch("http://127.0.0.1:8000/sleep-data", {
+      const sleepResponse = await fetch("https://sleepsense-ai.onrender.com/sleep-data", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -50,7 +50,7 @@ const InsightsPanel = () => {
       }
 
       // Fetch AI insights
-      const insightsResponse = await fetch("http://127.0.0.1:8000/insights", {
+      const insightsResponse = await fetch("https://sleepsense-ai.onrender.com/insights", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }

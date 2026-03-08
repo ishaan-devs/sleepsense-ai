@@ -33,7 +33,7 @@ const ChatWindow = () => {
 
     try {
 
-      const response = await fetch("http://127.0.0.1:8000/chat", {
+      const response = await fetch("https://sleepsense-ai.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -91,7 +91,7 @@ const ChatWindow = () => {
         // Only show greeting if no messages yet
         if (chatMessages.length > 0) return;
 
-        const response = await fetch("http://127.0.0.1:8000/greeting", {
+        const response = await fetch("https://sleepsense-ai.onrender.com/greeting", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
           }
