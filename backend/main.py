@@ -28,7 +28,8 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-origins = ["https://sleepsense-ai-ishaan-devs-projects-493745f6.vercel.app/", "https://sleepsense-ai.vercel.app/"]
+# origins = ["https://sleepsense-ai-ishaan-devs-projects-493745f6.vercel.app/", "https://sleepsense-ai.vercel.app/"]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
