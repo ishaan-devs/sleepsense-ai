@@ -62,7 +62,7 @@ const Signup = () => {
 
         <input
           type="email"
-          placeholder="Email"
+          placeholder="Username"
           className="w-full border border-gray-300 p-3 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-green-400"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
